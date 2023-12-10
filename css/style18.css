@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #444;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.article {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.article:hover {
+    background-color: #e9e9e9;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #e0e0e0;
+    }
+
+    .article {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    header, .footer {
+        text-align: left;
+        padding: 0.5rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+/* Flexbox example */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    background: lightgray;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Typography and Text Effects */
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Colors and Backgrounds */
+.primary-color {
+    color: #0275d8;
+}
+
+.bg-primary {
+    background-color: #0275d8;
+}
+
+.bg-secondary {
+    background-color: #6c757d;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Borders and Spacing */
+.rounded {
+    border-radius: 8px;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin: 0.375rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    margin: 0.375rem 0;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Layout and Structure */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+/* Hover Effects */
+.hover-effect:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Shadows and Depth */
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
